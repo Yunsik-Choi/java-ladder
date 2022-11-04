@@ -1,6 +1,5 @@
 package ladder.domain.ladder;
 
-import java.util.AbstractCollection;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.Collections;
@@ -36,10 +35,8 @@ public class LadderLine {
             return false;
         }
         LadderLine that = (LadderLine) o;
-        AbstractCollection<HorizontalLineDirection> horizontalLineDirections
-                = (AbstractCollection<HorizontalLineDirection>) this.horizontalLineDirections;
 
-        return horizontalLineDirections.equals(that.horizontalLineDirections);
+        return this.horizontalLineDirections.equals(that.horizontalLineDirections);
     }
 
     @Override

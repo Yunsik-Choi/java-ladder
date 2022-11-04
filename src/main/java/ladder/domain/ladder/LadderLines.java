@@ -1,6 +1,5 @@
 package ladder.domain.ladder;
 
-import java.util.AbstractCollection;
 import ladder.domain.Position;
 import ladder.exception.ladder.EscapeLadderLinesException;
 import ladder.exception.ladder.NoSuchLadderLineException;
@@ -31,7 +30,7 @@ public class LadderLines {
     private Position ladderClimbPosition(Position position) {
         Position currentPosition = position;
         for (int i = position.y(); i < ladderLines.size(); i++) {
-            currentPosition = ladderClimb(position, ladderLines.get(i));
+            currentPosition = ladderClimb(currentPosition, ladderLines.get(i));
         }
 
         validateInPositionInLadderSize(currentPosition);
@@ -74,9 +73,8 @@ public class LadderLines {
             return false;
         }
         LadderLines that = (LadderLines) o;
-        AbstractCollection<LadderLine> ladderLines = (AbstractCollection<LadderLine>) this.ladderLines;
 
-        return ladderLines.equals(that.ladderLines);
+        return this.ladderLines.equals(that.ladderLines);
     }
 
     @Override

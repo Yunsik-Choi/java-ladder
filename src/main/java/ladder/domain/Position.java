@@ -23,20 +23,20 @@ public class Position {
 
     public Position descend(HorizontalLineDirection horizontalLineDirection) {
         if (horizontalLineDirection.isRight()) {
-            return moveLeft();
+            return moveRight();
         }
         if (horizontalLineDirection.isLeft()) {
-            return moveRight();
+            return moveLeft();
         }
         return moveStraight();
     }
 
     private Position moveLeft() {
-        return new Position(this.x + 1, this.y + 1);
+        return new Position(this.x -1, this.y + 1);
     }
 
     private Position moveRight() {
-        return new Position(this.x - 1, this.y + 1);
+        return new Position(this.x + 1, this.y + 1);
     }
 
     private Position moveStraight() {
