@@ -30,7 +30,7 @@ public class LadderLines {
     private Position ladderClimbPosition(Position position) {
         Position currentPosition = position;
         for (int i = position.y(); i < ladderLines.size(); i++) {
-            currentPosition = ladderClimb(position, ladderLines.get(i));
+            currentPosition = ladderClimb(currentPosition, ladderLines.get(i));
         }
 
         validateInPositionInLadderSize(currentPosition);
