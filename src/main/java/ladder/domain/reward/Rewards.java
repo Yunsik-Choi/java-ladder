@@ -28,7 +28,7 @@ public class Rewards {
     }
 
     private void validateRewardBound(Position position) {
-        if (rewards.size() < position.x()) {
+        if (rewards.size() <= position.x()) {
             throw new ResultNotExistException();
         }
     }
