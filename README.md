@@ -32,3 +32,9 @@
 
 ## 온라인 코드 리뷰 과정
 * [텍스트와 이미지로 살펴보는 온라인 코드 리뷰 과정](https://github.com/nextstep-step/nextstep-docs/tree/master/codereview)
+
+## 리뷰
+- [1단계](https://github.com/next-step/java-ladder/pull/1524)
+- [2단계](https://github.com/next-step/java-ladder/pull/1533)
+- [3단계](https://github.com/next-step/java-ladder/pull/1540)
+- [4단계](https://github.com/next-step/java-ladder/pull/1571)
